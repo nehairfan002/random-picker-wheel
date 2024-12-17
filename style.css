@@ -1,0 +1,105 @@
+#spin-container {  
+  max-width: 600px;  
+  margin: 0 auto;  
+}  
+
+.spin-to-win {  
+  max-width: 600px;  
+}  
+
+.spin-to-win img {  
+  width: 100%;  
+  height: auto;  
+}  
+
+#spinner {  
+  display: grid;  
+  justify-content: center;  
+  align-items: center;  
+  align-content: center;  
+  justify-items: center;  
+  transition-timing-function: ease-in-out;  
+  transition: 3s;  
+  cursor: pointer;  
+}  
+
+.fast-fix {  
+  transition: 3s !important;  
+}  
+
+#spin-arrow { /* Corrected selector */  
+  max-width: 180px;  
+  width: calc(100vw * 0.3);  
+  max-height: 180px;  
+  height: calc(100vw * 0.3);  
+  position: absolute;  
+  background: radial-gradient(at 50% 50%, transparent 35%, white 25%);  
+  clip-path: polygon(50% 0%, 75% 40%, 25% 40%);  
+  filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.35));  
+  transition-timing-function: ease-in-out;  
+  transition: 3s;  
+}  
+
+/* Button Styles */  
+#si-btn {  
+  max-width: 320px;  
+  background: white;  
+  color: black;  
+  text-align: center;  
+  font-family: sans-serif;  
+  border-radius: 15px;  
+  margin: 25px auto;  
+  padding: 0px;  
+  filter: invert(1);  
+  opacity: 0;  
+}  
+
+#si-btn a {  
+  color: inherit;  
+  text-decoration: none;  
+  display: inline-block;  
+  padding: 20px 35px;  
+}  
+
+/* Offer Styles */  
+.spin-offer {  
+  max-width: 600px;  
+  padding: 20px;  
+  border-radius: 15px;  
+  text-align: center;  
+  font-size: 24px;  
+  font-family: sans-serif;  
+  position: relative;  
+  display: none; /* You may want to control this via JavaScript */  
+  animation: spin 2s linear forwards;  
+  color: white;  
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);  
+  margin-bottom: 30px;  
+}  
+
+@keyframes spin {  
+  0% { opacity: 0; }  
+  100% { opacity: 1; }  
+}  
+
+.spin-offer .item {  
+  padding: 10px;  
+}  
+
+.spin-title {  
+  /* Add specific styles for the title if needed */  
+}  
+
+.spin-price {  
+  font-size: 60px;  
+  line-height: 60px;  
+  padding-bottom: 0 !important;  
+}  
+
+.spin-info {  
+  padding-top: 0 !important;  
+}  
+
+.spin-disc {  
+  font-size: 12px;  
+}
